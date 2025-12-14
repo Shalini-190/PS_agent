@@ -3,11 +3,8 @@ import { AnalysisResult, Recommendation } from "../types";
 
 // Helper to get API key
 const getApiKey = (): string => {
-  const key = process.env.API_KEY;
-  if (!key) {
-    throw new Error("API Key not found in environment variables.");
-  }
-  return key;
+  // Using the provided API key for the buildathon/demo submission
+  return "AIzaSyC53f8cJvDrN9e4sFilOJss79JhEQY2Xps";
 };
 
 const SYSTEM_INSTRUCTION = `
